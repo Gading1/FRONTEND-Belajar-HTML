@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="amongous.ico" type="image/x-icon" />
+    <title>Belajar HTML</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Hello world!</h1>
+      <hr />
+      <img src="Gambar/download.png" alt="anjay" title="Gading" width="100" />
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#hellowordl1">paragraf 1</a>
+          </li>
+          <li>
+            <a href="#helloworld2">paragraf 2</a>
+          </li>
+          <li>
+            <a href="#listbookthatiliked">paragraf 3</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <article>
+        <h2>list buku yang aku suka</h2>
+
+        <section>
+          <h3>Deepwork</h3>
+          <figure>
+            <img
+              src="Gambar/deepwork.jpeg"
+              alt="i want to be software enginner"
+              loading="lazy"
+            />
+            <figcaption>Deepwork by Cal Newport</figcaption>
+          </figure>
+        </section>
+        <br />...atomic habits
+
+        <section>
+          <h3>atomic habits</h3>
+          <figure>
+            <img
+              src="Gambar/atomic-habits.jpeg"
+              alt="atomic Habits"
+              loading="lazy"
+            />
+            <figcaption>Atomic Habits by James Clear</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>the power of now</h3>
+          <br />...the power of now
+          <figure>
+            <img
+              src="Gambar/the-power-of-now.png"
+              alt="buku the power of now"
+            />
+            <figcaption>The Power of Now by Eckhart Tolle</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>make time</h3>
+          <br />...make time
+          <figure>
+            <img src="Gambar/make-time.jpeg" alt="buku Make Time" />
+            <figcaption>Buku Make Time by John dan Jake</figcaption>
+          </figure>
+
+          <aside>
+            <details>
+              <summary>tebak berapa buku yang udah kubaca</summary>
+              <p>6 buku</p>
+            </details>
+          </aside>
+
+          <br />
+
+          <table border="1" cellspacing="0" cellpadding="5">
+            <caption>
+              My Daily schedule
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8 am </time>-<time datetime="10:00"
+                    >10 am
+                  </time>
+                </td>
+                <td>Makan Pagi</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="10:00">10 am </time>-<time datetime="13:00"
+                    >1 pm
+                  </time>
+                </td>
+                <td>Istirahat</td>
+              </tr>
+              <tr>
+                <th scope="row">afternoon</th>
+                <td>
+                  <time datetime="13:00">1 pm </time>-<time datetime="17:00"
+                    >5 pm</time
+                  >
+                </td>
+                <td>belajar</td>
+              </tr>
+              <tr>
+                <th scope="row">evening</th>
+                <td rowspan="2">all other times</td>
+                <td>sleep</td>
+              </tr>
+              <tr>
+                <th scope="row">night</th>
+                <td>train</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  this is my daily schedule eat, train, code, sleep, and...
+                  repeat
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+
+        <abbr title="gading ">gading</abbr>
+      </article>
+
+      <hr />
+
+      <article id="Contact">
+        <h2>Contact me</h2>
+        <p>i'd like really to hear from you!</p>
+
+        <form action="https://htatpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <table border="0" cellspacing="0" cellpadding="5">
+              <tr>
+                <td><label for="firstName">First Name</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="Gading"
+                    autocomplete="on"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="lastName">Last Name</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="Gading"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="password">Password</label></td>
+                <td>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Gading"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="phone number">Password</label></td>
+                <td>
+                  <input
+                    type="tel"
+                    name="phone number"
+                    id="phone number"
+                    placeholder="555-5555-555"
+                    pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="favoriteDecade">Favorite Decade</label></td>
+                <td>
+                  <input
+                    type="Number"
+                    name="favoriteDecade"
+                    id="favoriteDecade"
+                    min="1950"
+                    max="2020"
+                    step="10"
+                    value="1950"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="coffee">Favourite Coffee</label></td>
+                <td>
+                  <select name="coffee" id="coffee" size="5">
+                    <optgroup label="Coffees">
+                      <option value="regularCoffee">Regular Coffee</option>
+                      <option value="icedCoffee" selected>Iced Coffe</option>
+                    </optgroup>
+                    <optgroup label="Espresso Drinks">
+                      <option value="latte">Latte</option>
+                      <option value="cappucino">Cappucino</option>
+                      <option value="americano">Americano</option>
+                    </optgroup>
+                    <option value="other">Other</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+
+            <!--  <p>
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Gading"
+                autocomplete="on"
+              />
+            </p>
+            <p>
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Gading"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Gading"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone number">Password</label>
+              <input
+                type="tel"
+                name="phone number"
+                id="phone number"
+                placeholder="555-5555-555"
+                pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
+                required
+              />
+            </p>
+            <p>
+              <label for="favoriteDecade">Favorite Decade</label>
+              <input
+                type="Number"
+                name="favoriteDecade"
+                id="favoriteDecade"
+                min="1950"
+                max="2020"
+                step="10"
+                value="1950"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="coffee">Favourite Coffee</label>
+              <select name="coffee" id="coffee" size="5">
+                <optgroup label="Coffees">
+                  <option value="regularCoffee">Regular Coffee</option>
+                  <option value="icedCoffee" selected>Iced Coffe</option>
+                </optgroup>
+                <optgroup label="Espresso Drinks">
+                  <option value="latte">Latte</option>
+                  <option value="cappucino">Cappucino</option>
+                  <option value="americano">Americano</option>
+                </optgroup>
+                <option value="other">Other</option>
+              </select>
+            </p> -->
+
+            <!--     <p>
+            <label for="coffee">Favourite Coffee</label>
+            <input name="coffee" id="coffee" type="text" list="coffe-list">
+            <datalist id="coffe-list"
+                <option value="regularCoffee">
+                <option value="icedCoffee">
+                <option value="latte">
+                <option value="cappucino">
+                <option value="americano">
+              <option value="other">
+            </datalist>
+            </input>
+          </p> -->
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Whats Your Favorite food?</legend>
+            <p>
+              <input
+                type="checkbox"
+                name="makanan"
+                id="nasiGoreng"
+                value="nasiGoreng"
+              />
+              <label for="nasiGoreng">Nasi Goreng</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="makanan"
+                id="ayamGoreng"
+                value="ayamGoreng"
+              />
+              <label for="ayamGoreng">Ayam</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="makanan"
+                id="kwetiew"
+                value="kwetiew"
+              />
+              <label for="kwetiew">Kwetiew</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="makanan"
+                id="ayamBakar"
+                value="ayamBakar"
+              />
+              <label for="ayamBakar">Ayam Bakar</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>What is Your Favorite Pet?</legend>
+            <p>
+              <input
+                type="radio"
+                name="hewan-peliharaan"
+                id="anjing"
+                value="anjing"
+              />
+              <label for="anjing">Anjing</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="hewan-peliharaan"
+                id="kucing"
+                value="kucing"
+              />
+              <label for="kucing">Kucing</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="hewan-peliharaan"
+                id="hamster"
+                value="hamster"
+              />
+              <label for="hamster">Hamster</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="hewan-peliharaan"
+                id="burung"
+                value="burung"
+              />
+              <label for="burung">Burung</label>
+            </p>
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Send me a note</legend>
+            <label for="masukan">Your message</label>
+            <br />
+            <textarea
+              name="masukan"
+              id="masukan"
+              cols="30"
+              rows="10"
+              placeholder="kirim disin!"
+            >
+            </textarea>
+            <p>
+              <button type="submit">Kirim!</button>
+            </p>
+          </fieldset>
+        </form>
+      </article>
+
+      <hr />
+      <section>
+        <h3 id="Kuliah">Kuliah</h3>
+        <p>Mata Kuliah favoritku</p>
+
+        klik <a href="amongous.ico">di sini</a> jika anda bosan
+
+        <ol>
+          <li><p>Risop</p></li>
+          <li><p>Ergonomi</p></li>
+          <li><p>Pengantar Teknik Industri</p></li>
+        </ol>
+      </section>
+      <hr />
+
+      <section>
+        <h3>list buku yang kusukai</h3>
+        <dl>
+          <dt>deepwork</dt>
+          <dd>membahas tentang cara kerja dengan sungguh-sungguh</dd>
+
+          <dt>Atomic Habits</dt>
+          <dd>cara membuat habit</dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="#">back to top</a>
+      </p>
+
+      <p>
+        &lt;&lt;&lt; &copy; <a href="latihan1.2.html">Gading</a> &gt;&gt;&gt;
+      </p>
+    </footer>
+  </body>
+</html>
